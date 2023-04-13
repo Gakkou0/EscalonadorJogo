@@ -1,0 +1,31 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stressBar {
+    background-color: rgb(93, 93, 93);
+    border-radius: 20px;
+    height: 30px;
+    width: 300px;
+}
+
+.stressBarComplete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: repeating-linear-gradient(
+        to left,
+        rgb(69, 255, 23),
+        rgb(243, 255, 23),
+        rgb(255, 23, 23)
+    );
+    border-radius: 20px;
+    color: #fff;
+    height: 100%;
+    width: 0;
+    transition: 1s ense 0.3s;
+}
