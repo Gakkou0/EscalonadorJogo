@@ -1,5 +1,3 @@
-#Introdução
-
 Jogo feito para a cadeira de Projeto Integrador I, na Universidade Federal do Ceará.
 
 O objetivo do jogo é simular, de forma didática, o funcionamento do escalanador de processos da CPU do computador, de forma que um usuário leigo consiga entender. 
