@@ -1,4 +1,4 @@
-##Introdução
+#Introdução
 
 Jogo feito para a cadeira de Projeto Integrador I, na Universidade Federal do Ceará.
 
