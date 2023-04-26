@@ -1,6 +1,6 @@
 const stress = document.querySelector(".stressBarComplete")
 const input = 0
-const maxValue = document.querySelector(".maxValue")
+const maxValue = document.querySelector(".maxValueInput")
 let finalValue = 0
 let max = 0
 
