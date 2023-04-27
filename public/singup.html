@@ -6,7 +6,7 @@
     <title>Cadastro</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
-    <script src='script.js'></script>
+    <script src='/scripts/script.js'></script>
 </head>
 <body>
     <form class="singupForm" action="index.html" method="post">  
@@ -14,6 +14,16 @@
             <div class="nameBox">
                 <label for="nameValue">Nome</label>
                 <input id="nameValue" type="text" placeholder="nome" required>
+            </div>
+
+            <div class="userNameBox">
+                <label for="userNameValue">Nome de usuario</label>
+                <input id="userNameValue" type="text" placeholder="nome" required>
+            </div>
+
+            <div class="emailBox">
+                <label for="emailValue">Email</label>
+                <input id="emailValue" type="email" placeholder="email" required>
             </div>
     
             <div class="passwordBox">
@@ -28,10 +38,10 @@
 
             <div class="uploadImage">
                 <label for="myFile">Imagem de perfil</label>
-                <input type="file" id="myFile" name="filename">
+                <input type="file" id="myFile" name="filename" required>
             </div>
 
-            <button class="registrationBotton" type="submit">cadastre-se</button>
+            <button class="registrationBotton" onclick="newRegistration()">cadastre-se</button>
     
         </div>
     </form>
