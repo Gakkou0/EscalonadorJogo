@@ -5,7 +5,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Login</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/styles/styles.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src='script.js'></script>
 </head>
 <body>
@@ -13,18 +14,18 @@
 <form class="loginForm" action="index.html" method="post">  
     <div class="loginBox">
         <div class="userBox">
-            <label for="userValue">Usuario</label>
+            <label for="userValue" class="form-label">Usuario</label>
             <input id="userValue" type="email" placeholder="usuario" required>
         </div>
 
         <div class="passwordBox">
-            <label for="passwordValue">Senha</label>
+            <label for="passwordValue" class="form-label">Senha</label>
             <input id="passwordValue" type="password" placeholder="senha" required>
         </div>
 
         <button class="loginBotton" type="submit">login</button> 
 
-        <a href="index.html">cadastro</a>
+        <a href="singup.html">cadastro</a>
     </div>
 </form>
 

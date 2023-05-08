@@ -1,11 +1,12 @@
-const mongoose = require("mongoose")
+const mysql = require('mysql2')
 
-mongoose.connect("mongodb://localhost/Escalonador", {
-    useNewUrlParser: true, 
-    useUnifiedTopology: true,
-    family: 4,
-}).then(() => {
-    console.log("MongoConected")
-}).catch((err)=>{
-    console.log("MongoDesconected: "+ err)
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'escalonador'
+})
+
+connection.connect(function (err){
+    console.log("deu certo")
 })
