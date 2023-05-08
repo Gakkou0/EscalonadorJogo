@@ -9,19 +9,13 @@
 //     console.log("max", max)
 // })
 
-const mongoose = require('mongoose')
-const userSchema = require('/schema/user')
-const mongoServer = require('/connection')
-
-function newRegistration(){
-    userSchema.create({
-        name: document.getElementById("nameValue"),
-        userName: document.getElementById("userNameValue"),
-        email: document.getElementById("emailValue"),
-        password: document.getElementById("passwordValue"),
-        matchesCampaingMode: 0,
-        matchesSurvivalMode: 0,
-        survivalHighScore: 0
-    }).save()
-}
+const db = require('./db')
+ 
+    const name = document.getElementById("nameValue")
+    const userName = document.getElementById("userNameValue")
+    const email = document.getElementById("emailValue")
+    const password = document.getElementById("passwordValue")
+    const matchesCampaingMode = 0
+    const matchesSurvivalMode = 0
+    const survivalHighScore = 0
 
