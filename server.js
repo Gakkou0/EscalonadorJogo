@@ -1,5 +1,4 @@
 const express = require('express');
-const mysql = require('mysql');
 // Initialise Express
 const app = express();
 // Render static files
