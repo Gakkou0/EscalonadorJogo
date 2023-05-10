@@ -1,3 +1,7 @@
+(async ()=>{
+    const db = require('./scripts/db')
+})()
+
 const express = require('express');
 const app = express();
 
