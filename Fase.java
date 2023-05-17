@@ -1,16 +1,41 @@
 public class Fase {
-    private List<Processo> processos;
+    private Queue queue;
+    private int pontuacao;
+    private boolean terminada;
 
-    public Fase() {
-        processos = new ArrayList<>();
-        // Adicione os processos específicos da fase à lista. posteriormente posso fazer uma função que funcione como um "gerador de processos" se isso for melhor pro desenvolvimento.
-        processos.add(new Processo("Processo 1"));
-        processos.add(new Processo("Processo 2"));
-        // ...
+    public void iniciar() {
+        pontuacao = 0;
+        terminada = false;
+        
     }
 
-    // Método para obter a lista de processos da fase
-    public List<Processo> getProcessos() {
-        return processos;
+    //falta numerar novas fases, definir um numero X de processos que cada fase tem e implementar a passagem entre elas.
+
+    public void MoveProcess() {
+        if (!queue.isEmpty()) {
+            Processo processoAtual = fila.removerProcesso();
+            // Realize as ações correspondentes ao processo atual
+            // Atualize a pontuação
+            pontuacao += processoAtual.getPontuacao();
+        } else {
+            terminada = true;
+        }
+    }
+
+
+    public Fila getFila() {
+        return fila;
+    }
+
+    public void setFila(Fila fila) {
+        this.fila = fila;
+    }
+
+    public int getPontuacao() {
+        return pontuacao;
+    }
+
+    public boolean isTerminada() {
+        return terminada;
     }
 }

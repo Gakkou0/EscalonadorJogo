@@ -4,11 +4,7 @@ public public class Main {
         // Criar uma instância da Fila
         Queue queue = new Queue();
         
-        // Criar e adicionar processos à fila
-        Processo processo1 = new Processo("Processo 1");
-        Processo processo2 = new Processo("Processo 2");
-        queue.AddProcess(processo1);
-        queue.addProcess(processo2);
+        //inserir aqui a função de gerar novos processos.
 
         // Criar uma instância da Fase
         Fase fase = new Fase();
