@@ -9,26 +9,26 @@
     <script src='/scripts/script.js'></script>
 </head>
 <body>
-    <form class="singupForm" action="index.html" method="post">  
+    <form class="singupForm" action="/cadastro" method="post">  
         <div class="registrationBox">
             <div class="nameBox">
                 <label for="nameValue">Nome</label>
-                <input id="nameValue" type="text" placeholder="nome" required>
+                <input id="nameValue" type="text" placeholder="nome" name="name" required>
             </div>
 
             <div class="userNameBox">
                 <label for="userNameValue">Nome de usuario</label>
-                <input id="userNameValue" type="text" placeholder="nome" required>
+                <input id="userNameValue" type="text" placeholder="nome" name="userName" required>
             </div>
 
             <div class="emailBox">
                 <label for="emailValue">Email</label>
-                <input id="emailValue" type="email" placeholder="email" required>
+                <input id="emailValue" type="email" placeholder="email" name="email"required>
             </div>
     
             <div class="passwordBox">
                 <label for="passwordValue">Senha</label>
-                <input id="passwordValue" type="password" placeholder="senha" required>
+                <input id="passwordValue" type="password" placeholder="senha" name="password" required>
             </div>
 
             <div class="passwordConfirm">
@@ -41,7 +41,7 @@
                 <input type="file" id="myFile" name="filename" required>
             </div>
 
-            <button class="registrationBotton" onclick="newRegistration()">cadastre-se</button>
+            <button class="registrationBotton" type="submit" value="OK">cadastre-se</button>
     
         </div>
     </form>
